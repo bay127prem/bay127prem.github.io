@@ -1,52 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Portfolio &bull; BAY127Prem | Benhalima Ahmed Youcef</title> <!--·-->
-	<meta charset='UTF-8'>
-	<meta name='description' content='The portfolio page of Benhalima Ahmed Youcef. CV, code, and lastest projects, along with small works.'/>
-	<meta name='keywords' content='mathematics, algeria, usa, java, javafx, physics, web, mobile, design, programming, development, code, android, video games'/>
-	<meta name='viewport' content='width=device-width, initial-scale=1'/>
-	<meta name='theme-color' content='white'/>
-	<link rel='shortcut icon' sizes='16x16 32x32 64x64' href='favicon.ico'/>
-	<link rel='stylesheet' type='text/css' href='style.css'/>
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-K672XFN');</script>
-	<!-- End Google Tag Manager -->
-  <!-- Site OG: -->
-  <meta property="og:site_name" content="Portfolio &bull; BAY127Prem | Benhalima Ahmed Youcef">
-  <!-- Page OG: -->
-  <meta property="og:title" content="Portfolio &bull; BAY127Prem | Benhalima Ahmed Youcef">
-  <meta property="og:description" content="The portfolio page of Benhalima Ahmed Youcef. CV, code, and lastest projects, along with small works.">
-  <meta property="og:url" content="http://bay127prem.github.io/">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            font-family: 'Fira Code', monospace;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #333;
+            margin: 0 auto 30px auto;
+            animation: pulse 2s infinite;
+        }
+
+        .logo-container img {
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+        }
+
+        .coming-soon {
+            font-size: 2rem;
+            color: #333;
+            letter-spacing: 2px;
+            position: relative;
+        }
+
+        .dots {
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        .dot {
+            display: inline-block;
+            animation: dot-blink 1.5s infinite both;
+        }
+
+        .dot:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .dot:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .dot:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes dot-blink {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
 </head>
-
 <body>
-  <nav>
-    <ul class=navbar id=nvleft style="margin-top: 50%!important;">
-      <li><a href='cv.html'>CV</a></li>
-	   <li><a href='projects.html'>Projects</a></li>
-      <li><a href='https://github.com/bay127prem'>GitHub</a></li>
-    </ul>
-    <ul class=navbar id=nvright style="margin-top: 50%!important;">
-      <li><a href='https://www.facebook.com/profile.php?id=100041716572455'>Facebook</a></li>
-	   <li><a href='https://www.linkedin.com/in/ahmed-youcef-benhalima-12b1b01bb/'>LinkedIn</a></li>
-      <li><a href='mailto:bay127prem@gmail.com'>E-mail</a></li>
-    </ul>
-  </nav>
-
-  <a id=avatar-link href='index.html'>
-    <img id=avatar src='logo.png' align=center>
-  </a>
-
-  <br>
-
-  <div id=image-viewer class=outoffocus>
-    <img id=big-image src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='/>
-  </div>
-
-    <script type='text/javascript' src='script.js'></script>
+    <div class="container">
+        <div class="logo-container">
+            <img src="logo.png" alt="bay127prem">
+        </div>
+        <div class="coming-soon">
+            Coming Soon<span class="dots"><span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></span>
+        </div>
+    </div>
 </body>
+</html>
